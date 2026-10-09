@@ -1,6 +1,6 @@
 # Separate Mesh Bodies
 
-Separate Mesh Bodies is a lightweight Unity Editor tool that separates disconnected geometry inside one `MeshFilter` mesh into individual mesh assets and scene GameObjects.
+Separate Mesh Bodies splits disconnected geometry within a single Unity mesh into individual mesh assets and scene GameObjects. It makes imported models easier to work with when several objects arrive combined into one mesh.
 
 It is designed for splitting mesh bodies / geometry islands after import. It is not a general-purpose mesh editor.
 
@@ -22,7 +22,7 @@ It is designed for splitting mesh bodies / geometry islands after import. It is 
 - Leaves the source GameObject and source mesh untouched.
 - Supports Undo for generated scene objects and generated mesh assets.
 
-## Requirements / Important Setup
+## Requirements
 
 The selected mesh must be readable. If the mesh is not readable, the tool disables `Separate Mesh Bodies` and shows a warning.
 
@@ -100,7 +100,7 @@ Existing generated folders are not reused. If a folder already exists, Unity-sty
 
 If separation finds zero or one body, no scene objects, mesh assets, or per-run output folder are created.
 
-## Limitations / Scope
+## Limitations
 
 - Processes one selected GameObject at a time.
 - Requires a direct `MeshFilter` on the selected GameObject.
@@ -115,7 +115,23 @@ If separation finds zero or one body, no scene objects, mesh assets, or per-run 
 
 ## Compatibility
 
-Tested with Unity 6000.3.15f1.
+Tested with Unity `6000.3.15f1`.
+
+## 7 Tools in 7 Days — Day 2
+
+This tool is part of the **7 Tools in 7 Days** series.
+
+[Read the Day 2 development story on Substack](https://ecesefercioglu.substack.com/p/7-tools-in-7-days-day-2-separate)
+
+| Day | Tool |
+| --- | --- |
+| Day 1 | [Parent From Bounds](https://github.com/seferciogluecce/parent-from-bounds) |
+| **Day 2** | **[Separate Mesh Bodies](https://github.com/seferciogluecce/separate-mesh-bodies)** |
+| Day 3 | [Brick Wall Generator](https://github.com/seferciogluecce/brick-wall-generator) |
+| Day 4 | [Particle System Context Previewer](https://github.com/seferciogluecce/particle-system-context-previewer) |
+| Day 5 | [Object Layout Tool](https://github.com/seferciogluecce/object-layout-tool) |
+| Day 6 | [DOTween Selection Animation Previewer](https://github.com/seferciogluecce/dotween-selection-animation-previewer) |
+| Day 7 | [Wave Object Distributor](https://github.com/seferciogluecce/wave-object-distributor) |
 
 ## License
 
